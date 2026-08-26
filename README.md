@@ -1,87 +1,471 @@
-# ResumeLens AI — ATS+ Resume Intelligence Engine
+# ResumeIQ
 
-ResumeLens AI is an intelligent, single-page web application that analyzes PDF or DOCX resumes in isolation. It parses document structure, runs layout compatibility audits, uses Gemini AI for structured extraction, and scores the resume against a programmatic, transparent rubric.
+### AI-Powered Resume Intelligence & ATS Analyzer
 
-## Key Features
+ResumeIQ is an AI-powered resume analysis platform that helps candidates understand how their resume performs from an ATS-oriented and recruiter perspective.
 
-1. **Structured Candidate Profile**: Deep LLM extraction of contact info, education history, detailed work experience, personal projects, certifications, and achievements.
-2. **ATS+ Score**: An overall 0–100 score based on a transparent, 105-point analytical rubric.
-3. **ATS Compatibility checks**: Programmatic detection of formatting risks (two-column sidebar layouts), scanned/image-only text, missing standard sections, incomplete contact info, inconsistent dates, long paragraphs, and passive bullets.
-4. **Skill Intelligence**: Extractions, categorization (languages, frameworks, cloud, databases), and dynamic normalization (e.g. mapping "ML" to "Machine Learning").
-5. **Achievement & Impact Analysis**: Scans bullet points using custom regex patterns for percentages, counts, metrics, and dollar values. Shows suggestions on exactly how to quantify passive bullets.
-6. **Recruiter Summaries**: AI-synthesized summaries, key strengths, and areas of improvement.
+It extracts the actual information present in a resume, structures it into a candidate profile, evaluates resume quality and ATS compatibility, calculates an overall analytical ATS score, identifies strengths and weaknesses, and provides actionable improvement insights.
+
+> **Don't just tell candidates that their resume needs improvement. Show them why.**
 
 ---
 
-## Tech Stack
-* **Frontend**: HTML5, CSS3 (Glassmorphic Dark Theme), and Vanilla JavaScript (No React/Vue frameworks).
-* **Backend**: Python + Flask REST API.
-* **Document Parsing**: PyMuPDF (fitz) for PDF text extraction & layout coordinates, python-docx for DOCX files.
-* **LLM Engine**: Gemini API (`gemini-1.5-flash`) via the `google-generativeai` SDK, with Pydantic schemas validating output.
+## 🚀 Live Demo
+
+**Try ResumeIQ:**  
+https://resumeiq-ui4q.onrender.com
+
+Upload a resume and get a complete analysis within seconds.
 
 ---
 
-## ATS+ Scoring Rubric
+## ✨ Features
 
-All scoring in the app is labeled under the **ATS+ scoring framework**. It represents a transparent analytical rubric and is not a replication of any proprietary corporate ATS algorithm.
+### 📄 Real Resume Data Extraction
 
-| Category | Max points | Description |
-|---|---|---|
-| ATS Compatibility | 20 | Passes parsing audits (no sidebars, clean text, contact info) |
-| Resume Structure | 20 | Formatting risks, missing sections, and layout cleanliness |
-| Content Quality | 20 | Use of strong technical action verbs in experience bullets |
-| Skills Representation | 20 | Skills volume, categorization, and normalization completeness |
-| Keyword Quality | 10 | Coverage of key terms mapping to tech domain fields |
-| Completeness | 10 | Section coverage percent (Contact info, Education, Experience, etc.) |
-| Quantified Achievements | 5 | Count of quantified, metric-backed impact statements |
-| **Total (raw)** | **105** | Normalized to **0–100** for dashboard presentation |
+ResumeIQ extracts information directly from the uploaded resume instead of relying on predefined or assumed candidate information.
+
+It identifies:
+
+- Personal Information
+- Education
+- Work Experience
+- Projects
+- Skills
+- Certifications
+- Achievements
+- Resume Bullet Points
+
+The extracted information is displayed in a structured candidate profile so users can verify what the system understood from their resume.
+
+### 🎯 Overall ATS Score
+
+ResumeIQ generates a single overall ATS-oriented score based on multiple measurable resume signals.
+
+The score is presented as **one combined score**, while the dashboard also shows how the score is distributed across different analysis categories.
+
+The analysis considers:
+
+- ATS Compatibility
+- Resume Structure
+- Keyword / Job Relevance
+- Content Quality
+- Skills Representation
+- Quantified Impact
+- Resume Completeness
+- Readability & Consistency
+
+The goal is to provide a practical estimate of resume readiness rather than claiming to reproduce the proprietary scoring system of any specific ATS.
+
+### 🤖 AI Recruiter Intelligence
+
+ResumeIQ provides recruiter-style insights based on the actual resume content.
+
+It identifies:
+
+- Candidate strengths
+- Key weaknesses
+- Important areas requiring attention
+- Resume quality observations
+- Actionable improvement recommendations
+
+### 🔍 ATS Compatibility Analysis
+
+The platform performs multiple ATS-oriented checks to identify potential parsing and resume-quality issues.
+
+Examples include:
+
+- Contact Information
+- Critical Resume Sections
+- Resume Column Layout
+- Text Extraction Quality
+- Employment Dates
+- Text Paragraph Lengths
+- Measurable Outcomes
+- Bullet Point Formatting
+
+Each check is presented with a clear status:
+
+**Pass / Warning / Fail**
+
+### 🧠 Skill Analysis
+
+ResumeIQ extracts technical skills from the actual resume and organizes them into categories.
+
+Examples include:
+
+- Programming Languages
+- Frameworks & Libraries
+- AI/ML Technologies
+- GenAI & LLMs
+- Tools
+- Core Competencies
+
+The system also analyzes the relative strength of different technical domains represented in the resume.
+
+### 📊 Quantified Impact Analysis
+
+ResumeIQ analyzes experience and project bullet points to determine whether they communicate measurable impact.
+
+It detects bullets that lack measurable outcomes and highlights opportunities to improve them using genuine metrics such as:
+
+- Accuracy
+- Performance
+- Speed
+- Latency
+- Scale
+- Efficiency
+- Time saved
+- Cost reduction
+
+The system does **not invent achievements or metrics**.
+
+Instead, it identifies where the candidate could add real measurable results.
+
+### 📋 Resume Completeness
+
+ResumeIQ checks whether important resume sections are present.
+
+It can identify sections such as:
+
+- Contact Information
+- Education
+- Work Experience
+- Skills
+- Projects
+- Certifications
+- Achievements
+
+### 📑 Extracted Resume Profile
+
+Users can inspect the structured profile generated from their resume.
+
+The profile includes:
+
+- Personal Information
+- Education
+- Experience
+- Projects
+- Skills
+- Certifications
+- Achievements
+
+### 📈 Detailed Category Analysis
+
+The dashboard provides deeper analysis of individual resume-quality categories.
+
+Users can understand not only their final score, but also **why** the score was generated and which areas are affecting it.
+
+### 📥 Resume Analysis Report
+
+The report contains:
+
+- Overall ATS Score
+- Score Distribution
+- Strengths
+- Key Issues
+- Priority Areas
+- ATS Compatibility Checks
+- Skill Analysis
+- Quantified Impact Analysis
+- Resume Completeness
+- Extracted Resume Profile
 
 ---
 
-## Getting Started
+# 🏗️ How ResumeIQ Works
 
-### 1. Installation
-
-Clone this repository and navigate to the project directory:
-```bash
-cd ResumeLens_AI
+```text
+                    ┌──────────────────────┐
+                    │     Resume Upload    │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │   PDF Text Extraction│
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │  Resume Information  │
+                    │      Extraction      │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │ Structured Candidate │
+                    │       Profile        │
+                    └──────────┬───────────┘
+                               │
+             ┌─────────────────┼─────────────────┐
+             │                 │                 │
+             ▼                 ▼                 ▼
+      ┌─────────────┐   ┌─────────────┐   ┌─────────────┐
+      │ ATS Checks  │   │ Skill & NLP │   │  Content    │
+      │             │   │  Analysis   │   │  Analysis   │
+      └──────┬──────┘   └──────┬──────┘   └──────┬──────┘
+             │                 │                 │
+             └─────────────────┼─────────────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │    ATS Score Engine  │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │ AI Recruiter Insights│
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │   Interactive Report │
+                    └──────────────────────┘
 ```
 
-Create a virtual environment and install dependencies:
+---
+
+# 🛠️ Tech Stack
+
+## Backend
+
+- Python
+- Flask
+- REST APIs
+
+## AI / NLP
+
+- Generative AI
+- Google Gemini API
+- Natural Language Processing
+- Structured information extraction
+- Resume content analysis
+
+## Document Processing
+
+- PDF text extraction
+- Resume parsing
+- Candidate profile generation
+
+## Frontend
+
+- HTML5
+- CSS3
+- JavaScript
+
+## Development
+
+- Git
+- GitHub
+- VS Code
+
+## Deployment
+
+- Render
+
+---
+
+# 📂 Project Structure
+
+```text
+ResumeIQ/
+│
+├── static/
+│   ├── style.css
+│   └── script.js
+│
+├── templates/
+│   └── index.html
+│
+├── data/
+│
+├── app.py
+├── ats_analyzer.py
+├── extractor.py
+├── resume_parser.py
+├── schemas.py
+├── prompts.py
+├── verify_scoring.py
+├── create_test_resume.py
+│
+├── requirements.txt
+├── .env.example
+├── .gitignore
+└── README.md
+```
+
+---
+
+# ⚙️ Installation
+
+## 1. Clone the repository
+
+```bash
+git clone https://github.com/sahaiatherva01/ResumeIQ.git
+cd ResumeIQ
+```
+
+## 2. Create a virtual environment
+
+### macOS / Linux
+
 ```bash
 python3 -m venv venv
 source venv/bin/activate
+```
+
+### Windows
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+## 3. Install dependencies
+
+```bash
 pip install -r requirements.txt
 ```
 
-### 2. Environment Variables
+## 4. Configure environment variables
 
-Create a `.env` file in the root folder (or copy `.env.example`):
-```bash
-cp .env.example .env
-```
+Create a `.env` file in the project root:
 
-Open `.env` and fill in your Gemini API key:
 ```env
-GEMINI_API_KEY=AIzaSy...your_gemini_api_key...
-PORT=5000
+GEMINI_API_KEY=your_api_key_here
 ```
-> **Note**: If `GEMINI_API_KEY` is not provided or set to a placeholder, the backend will run in a **demo mock mode** using prepopulated candidate data. This allows testing all frontend UI animations and layouts without calling the Gemini API.
 
-### 3. Running Locally
+You can use `.env.example` as a reference.
 
-Run the Flask application:
+**Never commit your real API key to GitHub.**
+
+## 5. Run the application
+
 ```bash
 python app.py
 ```
 
-The application will launch on: [http://localhost:5000](http://localhost:5000)
+The application will be available at:
+
+```text
+http://127.0.0.1:5000
+```
 
 ---
 
-## API Endpoints
+# 🔐 Environment Variables
 
-* **`GET /`**: Renders the frontend single-page dashboard.
-* **`GET /api/health`**: Returns a simple health check status.
-* **`POST /api/upload`**: Validates a document (PDF/DOCX), parses its raw text, and returns basic layout metadata.
-* **`POST /api/analyze`**: Standard analysis pipeline. Accepts a PDF/DOCX multipart upload or a JSON text payload. Returns the fully populated structured `CandidateProfile` JSON.
+ResumeIQ uses environment variables for sensitive configuration.
+
+```env
+GEMINI_API_KEY=your_gemini_api_key_here
+```
+
+The actual `.env` file should remain local and must not be committed to the repository.
+
+---
+
+# 🎯 Analysis Pipeline
+
+1. **Upload** — The user uploads their resume.
+2. **Extract** — The application extracts readable text from the document.
+3. **Parse** — Extracted text is converted into structured candidate information.
+4. **Validate** — Important resume information and sections are checked.
+5. **Analyze** — Resume structure, ATS compatibility, skills, content quality, keywords, readability, quantified impact, and completeness are evaluated.
+6. **Score** — Analysis signals are combined into a single overall ATS-oriented score.
+7. **Generate Insights** — Strengths, weaknesses, and improvement opportunities are identified.
+8. **Present** — Results are displayed through an interactive dashboard.
+
+---
+
+# 💡 Why ResumeIQ?
+
+A resume is often the first filter between a candidate and an opportunity.
+
+Candidates usually don't know:
+
+- Whether their resume is machine-readable
+- Whether important information is being extracted correctly
+- Whether their skills are represented clearly
+- Whether their experience demonstrates measurable impact
+- Whether their resume structure is ATS-friendly
+- Which weaknesses could affect recruiter perception
+
+ResumeIQ was built to make this process more transparent.
+
+Instead of simply saying:
+
+> **"Your resume needs improvement."**
+
+ResumeIQ tries to answer:
+
+> **"What is working, what is not, and why?"**
+
+---
+
+# 🔮 Future Improvements
+
+Potential future directions include:
+
+- Job Description Matching
+- Resume-to-Job Compatibility
+- Semantic Keyword Matching
+- Resume Version Comparison
+- Candidate Ranking
+- Advanced Resume Benchmarking
+- User Authentication
+- Persistent User Profiles
+- Resume History
+- Advanced LLM Evaluation
+- Support for Additional Resume Formats
+
+---
+
+# ⚠️ Disclaimer
+
+ResumeIQ provides an analytical estimate based on its own ATS-oriented resume analysis framework.
+
+It does **not** reproduce the proprietary scoring system of any specific Applicant Tracking System.
+
+Different ATS platforms may parse, rank, and evaluate resumes differently.
+
+Therefore, the ResumeIQ score should be treated as an **analytical resume-readiness indicator**, not an official ATS score.
+
+---
+
+# 👨‍💻 Author
+
+## Atherva Sahai
+
+Computer Science Undergraduate
+
+**Interests:**
+
+- Artificial Intelligence
+- Machine Learning
+- Generative AI
+- Computer Vision
+- NLP
+- Software Development
+
+---
+
+# 🤝 Feedback & Contributions
+
+ResumeIQ is an evolving project.
+
+If you have suggestions for improving the resume analysis, ATS checks, scoring methodology, UI, or overall functionality, feel free to open an issue or submit a pull request.
+
+**Open to suggestions and ideas that can make ResumeIQ better.**
+
+---
+
+# ⭐ Support
+
+If you find ResumeIQ interesting or useful, consider giving the repository a ⭐ on GitHub.
+
+---
+
+## 📜 License
+
+This project is intended for educational, experimental, and portfolio purposes.
