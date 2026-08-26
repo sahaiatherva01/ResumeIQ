@@ -10,18 +10,10 @@ It extracts the actual information present in a resume, structures it into a can
 
 ---
 
-## 🚀 Live Demo
 
-**Try ResumeIQ:**  
-https://resumeiq-ui4q.onrender.com
+##  Features
 
-Upload a resume and get a complete analysis within seconds.
-
----
-
-## ✨ Features
-
-### 📄 Real Resume Data Extraction
+###  Real Resume Data Extraction
 
 ResumeIQ extracts information directly from the uploaded resume instead of relying on predefined or assumed candidate information.
 
@@ -38,7 +30,7 @@ It identifies:
 
 The extracted information is displayed in a structured candidate profile so users can verify what the system understood from their resume.
 
-### 🎯 Overall ATS Score
+###  Overall ATS Score
 
 ResumeIQ generates a single overall ATS-oriented score based on multiple measurable resume signals.
 
@@ -57,7 +49,7 @@ The analysis considers:
 
 The goal is to provide a practical estimate of resume readiness rather than claiming to reproduce the proprietary scoring system of any specific ATS.
 
-### 🤖 AI Recruiter Intelligence
+###  AI Recruiter Intelligence
 
 ResumeIQ provides recruiter-style insights based on the actual resume content.
 
@@ -88,7 +80,7 @@ Each check is presented with a clear status:
 
 **Pass / Warning / Fail**
 
-### 🧠 Skill Analysis
+###  Skill Analysis
 
 ResumeIQ extracts technical skills from the actual resume and organizes them into categories.
 
@@ -103,7 +95,7 @@ Examples include:
 
 The system also analyzes the relative strength of different technical domains represented in the resume.
 
-### 📊 Quantified Impact Analysis
+###  Quantified Impact Analysis
 
 ResumeIQ analyzes experience and project bullet points to determine whether they communicate measurable impact.
 
@@ -122,7 +114,7 @@ The system does **not invent achievements or metrics**.
 
 Instead, it identifies where the candidate could add real measurable results.
 
-### 📋 Resume Completeness
+###  Resume Completeness
 
 ResumeIQ checks whether important resume sections are present.
 
@@ -136,7 +128,7 @@ It can identify sections such as:
 - Certifications
 - Achievements
 
-### 📑 Extracted Resume Profile
+###  Extracted Resume Profile
 
 Users can inspect the structured profile generated from their resume.
 
@@ -150,13 +142,13 @@ The profile includes:
 - Certifications
 - Achievements
 
-### 📈 Detailed Category Analysis
+###  Detailed Category Analysis
 
 The dashboard provides deeper analysis of individual resume-quality categories.
 
 Users can understand not only their final score, but also **why** the score was generated and which areas are affecting it.
 
-### 📥 Resume Analysis Report
+###  Resume Analysis Report
 
 The report contains:
 
@@ -173,7 +165,7 @@ The report contains:
 
 ---
 
-# 🏗️ How ResumeIQ Works
+#  How ResumeIQ Works
 
 ```text
                     ┌──────────────────────┐
@@ -225,7 +217,13 @@ The report contains:
 
 ---
 
-# 🛠️ Tech Stack
+#  Tech Stack
+
+## Frontend
+
+- HTML5
+- CSS3
+- JavaScript
 
 ## Backend
 
@@ -246,18 +244,6 @@ The report contains:
 - PDF text extraction
 - Resume parsing
 - Candidate profile generation
-
-## Frontend
-
-- HTML5
-- CSS3
-- JavaScript
-
-## Development
-
-- Git
-- GitHub
-- VS Code
 
 ## Deployment
 
@@ -296,7 +282,7 @@ ResumeIQ/
 
 ---
 
-# ⚙️ Installation
+#  Installation
 
 ## 1. Clone the repository
 
@@ -353,7 +339,7 @@ http://127.0.0.1:5000
 
 ---
 
-# 🔐 Environment Variables
+#  Environment Variables
 
 ResumeIQ uses environment variables for sensitive configuration.
 
@@ -365,7 +351,7 @@ The actual `.env` file should remain local and must not be committed to the repo
 
 ---
 
-# 🎯 Analysis Pipeline
+#  Analysis Pipeline
 
 1. **Upload** — The user uploads their resume.
 2. **Extract** — The application extracts readable text from the document.
@@ -378,7 +364,7 @@ The actual `.env` file should remain local and must not be committed to the repo
 
 ---
 
-# 💡 Why ResumeIQ?
+#  Why ResumeIQ?
 
 A resume is often the first filter between a candidate and an opportunity.
 
@@ -403,24 +389,6 @@ ResumeIQ tries to answer:
 
 ---
 
-# 🔮 Future Improvements
-
-Potential future directions include:
-
-- Job Description Matching
-- Resume-to-Job Compatibility
-- Semantic Keyword Matching
-- Resume Version Comparison
-- Candidate Ranking
-- Advanced Resume Benchmarking
-- User Authentication
-- Persistent User Profiles
-- Resume History
-- Advanced LLM Evaluation
-- Support for Additional Resume Formats
-
----
-
 # ⚠️ Disclaimer
 
 ResumeIQ provides an analytical estimate based on its own ATS-oriented resume analysis framework.
@@ -432,40 +400,3 @@ Different ATS platforms may parse, rank, and evaluate resumes differently.
 Therefore, the ResumeIQ score should be treated as an **analytical resume-readiness indicator**, not an official ATS score.
 
 ---
-
-# 👨‍💻 Author
-
-## Atherva Sahai
-
-Computer Science Undergraduate
-
-**Interests:**
-
-- Artificial Intelligence
-- Machine Learning
-- Generative AI
-- Computer Vision
-- NLP
-- Software Development
-
----
-
-# 🤝 Feedback & Contributions
-
-ResumeIQ is an evolving project.
-
-If you have suggestions for improving the resume analysis, ATS checks, scoring methodology, UI, or overall functionality, feel free to open an issue or submit a pull request.
-
-**Open to suggestions and ideas that can make ResumeIQ better.**
-
----
-
-# ⭐ Support
-
-If you find ResumeIQ interesting or useful, consider giving the repository a ⭐ on GitHub.
-
----
-
-## 📜 License
-
-This project is intended for educational, experimental, and portfolio purposes.
