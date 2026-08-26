@@ -92,3 +92,7 @@ reports/
 # =========================
 debug_*.json
 analysis_*.json
+
+.env
+.env.*
+!.env.example
