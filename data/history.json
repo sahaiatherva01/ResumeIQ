@@ -1,0 +1,104 @@
+[
+  {
+    "version_id": "1787742958",
+    "date": "Aug 26, 16:45",
+    "file_name": "Resume_Updated.pdf",
+    "overall_score": 79.5,
+    "category_scores": {
+      "ats_compatibility": 14.0,
+      "resume_structure": 15.0,
+      "keyword_relevance": 16.0,
+      "content_quality": 12.0,
+      "skills_representation": 10.0,
+      "quantified_impact": 0.0,
+      "completeness": 9.5,
+      "readability_consistency": 3.0,
+      "overall_score": 79.5
+    }
+  },
+  {
+    "version_id": "1787742173",
+    "date": "Aug 26, 16:32",
+    "file_name": "Resume_Updated.pdf",
+    "overall_score": 79.5,
+    "category_scores": {
+      "ats_compatibility": 14.0,
+      "resume_structure": 15.0,
+      "keyword_relevance": 16.0,
+      "content_quality": 12.0,
+      "skills_representation": 10.0,
+      "quantified_impact": 0.0,
+      "completeness": 9.5,
+      "readability_consistency": 3.0,
+      "overall_score": 79.5
+    }
+  },
+  {
+    "version_id": "1787741925",
+    "date": "Aug 26, 16:28",
+    "file_name": "Resume_Updated.pdf",
+    "overall_score": 79.5,
+    "category_scores": {
+      "ats_compatibility": 14.0,
+      "resume_structure": 15.0,
+      "keyword_relevance": 16.0,
+      "content_quality": 12.0,
+      "skills_representation": 10.0,
+      "quantified_impact": 0.0,
+      "completeness": 9.5,
+      "readability_consistency": 3.0,
+      "overall_score": 79.5
+    }
+  },
+  {
+    "version_id": "1787741832",
+    "date": "Aug 26, 16:27",
+    "file_name": "Resume_Atherva_Sahai.pdf",
+    "overall_score": 73.0,
+    "category_scores": {
+      "ats_compatibility": 9.5,
+      "resume_structure": 15.0,
+      "keyword_relevance": 16.0,
+      "content_quality": 9.0,
+      "skills_representation": 10.0,
+      "quantified_impact": 0.0,
+      "completeness": 9.5,
+      "readability_consistency": 4.0,
+      "overall_score": 73.0
+    }
+  },
+  {
+    "version_id": "1787739996",
+    "date": "Aug 26, 15:56",
+    "file_name": "Resume_Atherva_Sahai.pdf",
+    "overall_score": 73.0,
+    "category_scores": {
+      "ats_compatibility": 9.5,
+      "resume_structure": 15.0,
+      "keyword_relevance": 16.0,
+      "content_quality": 9.0,
+      "skills_representation": 10.0,
+      "quantified_impact": 0.0,
+      "completeness": 9.5,
+      "readability_consistency": 4.0,
+      "overall_score": 73.0
+    }
+  },
+  {
+    "version_id": "1787739628",
+    "date": "Aug 26, 15:50",
+    "file_name": "test_resume.docx",
+    "overall_score": 69.5,
+    "category_scores": {
+      "ats_compatibility": 14.0,
+      "resume_structure": 13.0,
+      "keyword_relevance": 6.0,
+      "content_quality": 12.0,
+      "skills_representation": 7.0,
+      "quantified_impact": 5.0,
+      "completeness": 9.5,
+      "readability_consistency": 3.0,
+      "overall_score": 69.5
+    }
+  }
+]

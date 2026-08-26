@@ -1,0 +1,781 @@
+{
+  "personal_info": {
+    "name": "Alex Mercer",
+    "email": "alex.mercer@example.com",
+    "phone": "1 555 123 4567",
+    "location": null,
+    "linkedin": "linkedin.com/in/alexmercer",
+    "github": "github.com/alexmercer",
+    "portfolio": null
+  },
+  "education": [
+    {
+      "institution": "University of California, Berkeley - B.S. in Computer Science (GPA: 3.82) - 2018 - 2022",
+      "degree": "University of California, Berkeley - B.S.",
+      "field": "Computer Science (GPA: 3.82) - 2018 - 2022",
+      "gpa": "3.82",
+      "start_year": "2018",
+      "graduation_year": "2022"
+    }
+  ],
+  "experience": [
+    {
+      "company": "TechCorp Solutions",
+      "role": "Software Engineer II",
+      "duration": "2022 - Present",
+      "responsibilities": [
+        "Developed and maintained microservices using Python and Flask.",
+        "Reduced page load time by 35% through API query optimizations.",
+        "Spearheaded migration of legacy services, resulting in a 20% cloud hosting cost reduction."
+      ],
+      "technologies": [
+        "Python",
+        "Flask"
+      ],
+      "achievements": []
+    },
+    {
+      "company": "Innovate AI - Software Engineering Intern - 2021",
+      "role": null,
+      "duration": null,
+      "responsibilities": [
+        "Built document scanning prototypes achieving 92% classification accuracy.",
+        "Automated reporting pipelines, saving the operations team 5 hours per week."
+      ],
+      "technologies": [],
+      "achievements": []
+    }
+  ],
+  "projects": [
+    {
+      "name": "Project",
+      "description": "ResumeLens AI Tech: Python, Flask, Gemini API, PyMuPDF Designed and built a complete single-page interactive report and scoring tool.",
+      "technologies": [
+        "Python",
+        "Flask"
+      ],
+      "domain": "AI / Computer Vision",
+      "achievements": "ResumeLens AI\nTech: Python, Flask, Gemini API, PyMuPDF\nDesigned and built a complete single-page interactive report and scoring tool.",
+      "links": []
+    }
+  ],
+  "certifications": [
+    {
+      "name": "AWS Certified Developer - Associate (2023)",
+      "issuer": "Accredited Provider",
+      "date": null
+    }
+  ],
+  "achievements": [],
+  "skill_profile": {
+    "raw_skills": [
+      "Python",
+      "JavaScript",
+      "Flask",
+      "REST APIs",
+      "PyTorch",
+      "Git",
+      "GitHub"
+    ],
+    "categorized_skills": {
+      "Programming Languages": [
+        "Python",
+        "JavaScript"
+      ],
+      "Frameworks & Libraries": [
+        "Flask",
+        "REST APIs"
+      ],
+      "AI/ML Technologies": [
+        "PyTorch"
+      ],
+      "Tools": [
+        "Git",
+        "GitHub"
+      ]
+    },
+    "normalized_skills": [
+      "Python",
+      "JavaScript",
+      "Flask",
+      "REST APIs",
+      "PyTorch",
+      "Git",
+      "GitHub"
+    ]
+  },
+  "canonical_resume": {
+    "personal_info": {
+      "name": "Alex Mercer",
+      "email": "alex.mercer@example.com",
+      "phone": "1 555 123 4567",
+      "location": null,
+      "linkedin": "linkedin.com/in/alexmercer",
+      "github": "github.com/alexmercer",
+      "portfolio": null
+    },
+    "summary": "A Computer Science undergraduate building full-stack computer vision systems using OpenCV, MediaPipe and PyTorch, while exploring Agentic AI, RAG and LLM integration using Google Gemini API in multi-agent architectures. Target areas: AI/ML Engineering, Computer Vision Research, SDE internships.",
+    "education": [
+      {
+        "institution": "University of California, Berkeley - B.S. in Computer Science (GPA: 3.82) - 2018 - 2022",
+        "degree": "University of California, Berkeley - B.S.",
+        "field": "Computer Science (GPA: 3.82) - 2018 - 2022",
+        "gpa": "3.82",
+        "start_year": "2018",
+        "graduation_year": "2022"
+      }
+    ],
+    "experience": [
+      {
+        "company": "TechCorp Solutions",
+        "role": "Software Engineer II",
+        "duration": "2022 - Present",
+        "responsibilities": [
+          "Developed and maintained microservices using Python and Flask.",
+          "Reduced page load time by 35% through API query optimizations.",
+          "Spearheaded migration of legacy services, resulting in a 20% cloud hosting cost reduction."
+        ],
+        "technologies": [
+          "Python",
+          "Flask"
+        ],
+        "achievements": []
+      },
+      {
+        "company": "Innovate AI - Software Engineering Intern - 2021",
+        "role": null,
+        "duration": null,
+        "responsibilities": [
+          "Built document scanning prototypes achieving 92% classification accuracy.",
+          "Automated reporting pipelines, saving the operations team 5 hours per week."
+        ],
+        "technologies": [],
+        "achievements": []
+      }
+    ],
+    "research_experience": [],
+    "projects": [
+      {
+        "name": "Project",
+        "description": "ResumeLens AI Tech: Python, Flask, Gemini API, PyMuPDF Designed and built a complete single-page interactive report and scoring tool.",
+        "technologies": [
+          "Python",
+          "Flask"
+        ],
+        "domain": "AI / Computer Vision",
+        "achievements": "ResumeLens AI\nTech: Python, Flask, Gemini API, PyMuPDF\nDesigned and built a complete single-page interactive report and scoring tool.",
+        "links": []
+      }
+    ],
+    "skills": [
+      "Python",
+      "JavaScript",
+      "Flask",
+      "REST APIs",
+      "PyTorch",
+      "Git",
+      "GitHub"
+    ],
+    "certifications": [
+      {
+        "name": "AWS Certified Developer - Associate (2023)",
+        "issuer": "Accredited Provider",
+        "date": null
+      }
+    ],
+    "achievements": [],
+    "extracurriculars": [],
+    "all_bullets": [
+      {
+        "id": "bullet_exp_0",
+        "section": "experience",
+        "subsection": "Experience",
+        "entity": "TechCorp Solutions",
+        "role": "Software Engineer II",
+        "text": "Developed and maintained microservices using Python and Flask.",
+        "metrics": [],
+        "has_metric": false,
+        "skills": [],
+        "action_verbs": [],
+        "quantification_type": "none"
+      },
+      {
+        "id": "bullet_exp_1",
+        "section": "experience",
+        "subsection": "Experience",
+        "entity": "TechCorp Solutions",
+        "role": "Software Engineer II",
+        "text": "Reduced page load time by 35% through API query optimizations.",
+        "metrics": [
+          "35%"
+        ],
+        "has_metric": true,
+        "skills": [],
+        "action_verbs": [],
+        "quantification_type": "strong"
+      },
+      {
+        "id": "bullet_exp_2",
+        "section": "experience",
+        "subsection": "Experience",
+        "entity": "TechCorp Solutions",
+        "role": "Software Engineer II",
+        "text": "Spearheaded migration of legacy services, resulting in a 20% cloud hosting cost reduction.",
+        "metrics": [
+          "20%"
+        ],
+        "has_metric": true,
+        "skills": [],
+        "action_verbs": [],
+        "quantification_type": "strong"
+      },
+      {
+        "id": "bullet_exp_3",
+        "section": "experience",
+        "subsection": "Experience",
+        "entity": "Innovate AI - Software Engineering Intern - 2021",
+        "role": null,
+        "text": "Built document scanning prototypes achieving 92% classification accuracy.",
+        "metrics": [
+          "92%"
+        ],
+        "has_metric": true,
+        "skills": [],
+        "action_verbs": [],
+        "quantification_type": "strong"
+      },
+      {
+        "id": "bullet_exp_4",
+        "section": "experience",
+        "subsection": "Experience",
+        "entity": "Innovate AI - Software Engineering Intern - 2021",
+        "role": null,
+        "text": "Automated reporting pipelines, saving the operations team 5 hours per week.",
+        "metrics": [
+          "5 hours per week"
+        ],
+        "has_metric": true,
+        "skills": [],
+        "action_verbs": [],
+        "quantification_type": "strong"
+      },
+      {
+        "id": "bullet_proj_5",
+        "section": "projects",
+        "subsection": "Projects",
+        "entity": "Project",
+        "role": null,
+        "text": "ResumeLens AI",
+        "metrics": [],
+        "has_metric": false,
+        "skills": [],
+        "action_verbs": [],
+        "quantification_type": "none"
+      },
+      {
+        "id": "bullet_proj_6",
+        "section": "projects",
+        "subsection": "Projects",
+        "entity": "Project",
+        "role": null,
+        "text": "Tech: Python, Flask, Gemini API, PyMuPDF",
+        "metrics": [],
+        "has_metric": false,
+        "skills": [],
+        "action_verbs": [],
+        "quantification_type": "none"
+      },
+      {
+        "id": "bullet_proj_7",
+        "section": "projects",
+        "subsection": "Projects",
+        "entity": "Project",
+        "role": null,
+        "text": "Designed and built a complete single-page interactive report and scoring tool.",
+        "metrics": [],
+        "has_metric": false,
+        "skills": [],
+        "action_verbs": [],
+        "quantification_type": "none"
+      }
+    ],
+    "raw_text": "Alex Mercer\nEmail: alex.mercer@example.com | Phone: +1 555 123 4567 | SF, CA\nLinkedIn: linkedin.com/in/alexmercer | GitHub: github.com/alexmercer\nEducation\nUniversity of California, Berkeley - B.S. in Computer Science (GPA: 3.82) - 2018 - 2022\nExperience\nTechCorp Solutions - Software Engineer II - 2022 - Present\n- Developed and maintained microservices using Python and Flask.\n- Reduced page load time by 35% through API query optimizations.\n- Spearheaded migration of legacy services, resulting in a 20% cloud hosting cost reduction.\nInnovate AI - Software Engineering Intern - 2021\n- Built document scanning prototypes achieving 92% classification accuracy.\n- Automated reporting pipelines, saving the operations team 5 hours per week.\nProjects\nResumeLens AI - Tech: Python, Flask, Gemini API, PyMuPDF\n- Designed and built a complete single-page interactive report and scoring tool.\nCertifications\nAWS Certified Developer - Associate (2023)\nSkills\nPython, Flask, Docker, AWS, PostgreSQL, Git, FastAPI, React, JavaScript, HTML, CSS, PyTorch, REST APIs"
+  },
+  "extraction_evidence": {
+    "raw_text_length": 1054,
+    "page_count": 0,
+    "sections_detected": [
+      "Education",
+      "Experience",
+      "Skills",
+      "Projects",
+      "Certifications"
+    ],
+    "source_bullets": [
+      "Developed and maintained microservices using Python and Flask.",
+      "Reduced page load time by 35% through API query optimizations.",
+      "Spearheaded migration of legacy services, resulting in a 20% cloud hosting cost reduction.",
+      "Built document scanning prototypes achieving 92% classification accuracy.",
+      "Automated reporting pipelines, saving the operations team 5 hours per week.",
+      "ResumeLens AI",
+      "Tech: Python, Flask, Gemini API, PyMuPDF",
+      "Designed and built a complete single-page interactive report and scoring tool."
+    ],
+    "extraction_warnings": [
+      "Extracted experience role 'Role' was not found in the raw resume text and was removed.",
+      "Extracted experience duration 'Duration' was not found in the raw resume text and was removed."
+    ],
+    "item_evidence": [
+      {
+        "item_type": "personal_info",
+        "field_name": "name",
+        "extracted_value": "Alex Mercer",
+        "source": "resume_text",
+        "confidence": 1.0,
+        "matched_substring": "Alex Mercer"
+      },
+      {
+        "item_type": "personal_info",
+        "field_name": "email",
+        "extracted_value": "alex.mercer@example.com",
+        "source": "resume_text",
+        "confidence": 1.0,
+        "matched_substring": "alex.mercer@example.com"
+      },
+      {
+        "item_type": "personal_info",
+        "field_name": "phone",
+        "extracted_value": "1 555 123 4567",
+        "source": "resume_text",
+        "confidence": 1.0,
+        "matched_substring": "1 555 123 4567"
+      },
+      {
+        "item_type": "personal_info",
+        "field_name": "linkedin",
+        "extracted_value": "linkedin.com/in/alexmercer",
+        "source": "resume_text",
+        "confidence": 1.0,
+        "matched_substring": "linkedin.com/in/alexmercer"
+      },
+      {
+        "item_type": "personal_info",
+        "field_name": "github",
+        "extracted_value": "github.com/alexmercer",
+        "source": "resume_text",
+        "confidence": 1.0,
+        "matched_substring": "github.com/alexmercer"
+      },
+      {
+        "item_type": "education",
+        "field_name": "institution_0",
+        "extracted_value": "University of California, Berkeley - B.S. in Computer Science (GPA: 3.82) - 2018 - 2022",
+        "source": "resume_text",
+        "confidence": 1.0,
+        "matched_substring": "University of California, Berkeley - B.S. in Computer Science (GPA: 3.82) - 2018 - 2022"
+      },
+      {
+        "item_type": "education",
+        "field_name": "degree_0",
+        "extracted_value": "University of California, Berkeley - B.S.",
+        "source": "resume_text",
+        "confidence": 1.0,
+        "matched_substring": "University of California, Berkeley - B.S."
+      },
+      {
+        "item_type": "education",
+        "field_name": "field_0",
+        "extracted_value": "Computer Science (GPA: 3.82) - 2018 - 2022",
+        "source": "resume_text",
+        "confidence": 1.0,
+        "matched_substring": "Computer Science (GPA: 3.82) - 2018 - 2022"
+      },
+      {
+        "item_type": "education",
+        "field_name": "gpa_0",
+        "extracted_value": "3.82",
+        "source": "resume_text",
+        "confidence": 1.0,
+        "matched_substring": "3.82"
+      },
+      {
+        "item_type": "education",
+        "field_name": "start_year_0",
+        "extracted_value": "2018",
+        "source": "resume_text",
+        "confidence": 1.0,
+        "matched_substring": "2018"
+      },
+      {
+        "item_type": "education",
+        "field_name": "graduation_year_0",
+        "extracted_value": "2022",
+        "source": "resume_text",
+        "confidence": 1.0,
+        "matched_substring": "2022"
+      },
+      {
+        "item_type": "experience",
+        "field_name": "company_0",
+        "extracted_value": "TechCorp Solutions",
+        "source": "resume_text",
+        "confidence": 1.0,
+        "matched_substring": "TechCorp Solutions"
+      },
+      {
+        "item_type": "experience",
+        "field_name": "role_0",
+        "extracted_value": "Software Engineer II",
+        "source": "resume_text",
+        "confidence": 1.0,
+        "matched_substring": "Software Engineer II"
+      },
+      {
+        "item_type": "experience",
+        "field_name": "duration_0",
+        "extracted_value": "2022 - Present",
+        "source": "resume_text",
+        "confidence": 1.0,
+        "matched_substring": "2022 - Present"
+      },
+      {
+        "item_type": "experience",
+        "field_name": "company_1",
+        "extracted_value": "Innovate AI - Software Engineering Intern - 2021",
+        "source": "resume_text",
+        "confidence": 1.0,
+        "matched_substring": "Innovate AI - Software Engineering Intern - 2021"
+      },
+      {
+        "item_type": "experience",
+        "field_name": "role_1",
+        "extracted_value": "Role",
+        "source": "not_found_in_resume",
+        "confidence": 0.0,
+        "matched_substring": null
+      },
+      {
+        "item_type": "experience",
+        "field_name": "duration_1",
+        "extracted_value": "Duration",
+        "source": "not_found_in_resume",
+        "confidence": 0.0,
+        "matched_substring": null
+      },
+      {
+        "item_type": "project",
+        "field_name": "name_0",
+        "extracted_value": "Project",
+        "source": "resume_text",
+        "confidence": 1.0,
+        "matched_substring": "Project"
+      },
+      {
+        "item_type": "certification",
+        "field_name": "name_0",
+        "extracted_value": "AWS Certified Developer - Associate (2023)",
+        "source": "resume_text",
+        "confidence": 1.0,
+        "matched_substring": "AWS Certified Developer - Associate (2023)"
+      },
+      {
+        "item_type": "skill",
+        "field_name": "skill",
+        "extracted_value": "Python",
+        "source": "resume_text",
+        "confidence": 1.0,
+        "matched_substring": "Python"
+      },
+      {
+        "item_type": "skill",
+        "field_name": "skill",
+        "extracted_value": "JavaScript",
+        "source": "resume_text",
+        "confidence": 1.0,
+        "matched_substring": "JavaScript"
+      },
+      {
+        "item_type": "skill",
+        "field_name": "skill",
+        "extracted_value": "Flask",
+        "source": "resume_text",
+        "confidence": 1.0,
+        "matched_substring": "Flask"
+      },
+      {
+        "item_type": "skill",
+        "field_name": "skill",
+        "extracted_value": "REST APIs",
+        "source": "resume_text",
+        "confidence": 1.0,
+        "matched_substring": "REST APIs"
+      },
+      {
+        "item_type": "skill",
+        "field_name": "skill",
+        "extracted_value": "PyTorch",
+        "source": "resume_text",
+        "confidence": 1.0,
+        "matched_substring": "PyTorch"
+      },
+      {
+        "item_type": "skill",
+        "field_name": "skill",
+        "extracted_value": "Git",
+        "source": "resume_text",
+        "confidence": 1.0,
+        "matched_substring": "Git"
+      },
+      {
+        "item_type": "skill",
+        "field_name": "skill",
+        "extracted_value": "GitHub",
+        "source": "resume_text",
+        "confidence": 1.0,
+        "matched_substring": "GitHub"
+      }
+    ]
+  },
+  "score_evidence": {
+    "ats_compatibility": {
+      "score": 14.0,
+      "max_score": 15.0,
+      "passed": [
+        "Contact Information: Both email and phone contact details were successfully detected.",
+        "Critical Resume Sections: All critical sections (Education, Experience, Skills) were successfully detected.",
+        "Resume Column Layout: Standard single-column text layout detected.",
+        "Text Extraction Quality: Resume text is digitally extractable and clean.",
+        "Text Paragraph Lengths: All experience bullet points are concise and readable.",
+        "Measurable Outcomes: Good representation of metrics and quantitative outcomes: 4/8 experience/project bullets contain strong metrics.",
+        "Structure: Found both work experience and education blocks."
+      ],
+      "warnings": [
+        "Employment Dates: One or more work experience entries are missing duration dates."
+      ]
+    },
+    "resume_structure": {
+      "score": 13.0,
+      "max_score": 15.0,
+      "evidence": [
+        "Layout: Single-column standard layout (+4.0)",
+        "Parsing: Digitally extractable clean text (+6.0)",
+        "Structure: Experience item 1 is missing company or role (-2.0)"
+      ]
+    },
+    "keyword_relevance": {
+      "score": 20.0,
+      "max_score": 20.0,
+      "matched": [
+        "Required: Python",
+        "Required: Flask",
+        "Required: REST APIs",
+        "Required: Git"
+      ],
+      "missing": []
+    },
+    "content_quality": {
+      "score": 12.0,
+      "max_score": 15.0,
+      "strong_bullets": [
+        "Developed and maintained microservices using Python and Flask.",
+        "Reduced page load time by 35% through API query optimizations.",
+        "Spearheaded migration of legacy services, resulting in a 20% cloud hosting cost reduction.",
+        "Built document scanning prototypes achieving 92% classification accuracy.",
+        "Automated reporting pipelines, saving the operations team 5 hours per week.",
+        "Designed and built a complete single-page interactive report and scoring tool."
+      ],
+      "weak_bullets": [
+        "ResumeLens AI",
+        "Tech: Python, Flask, Gemini API, PyMuPDF"
+      ]
+    },
+    "skills_representation": {
+      "score": 7.0,
+      "max_score": 10.0,
+      "evidence": [
+        "Skills Count: Minimal skills list. Found 1-7 skills (+2.0)",
+        "Skills Layout: Skills are categorized by domains (+2.5)",
+        "Skills Standard: Skills are normalized and clean (+2.5)"
+      ]
+    },
+    "quantified_impact": {
+      "score": 5.0,
+      "max_score": 10.0,
+      "total_bullets": 8,
+      "quantified_bullets": 4,
+      "metrics": [
+        "20%",
+        "35%",
+        "5 hours per week",
+        "92%"
+      ],
+      "evidence": [
+        "Outcome Metrics: Found 4 of 8 experience/project bullets containing outcome metrics.",
+        "No technical numeric scale evidence found."
+      ]
+    },
+    "completeness": {
+      "score": 9.5,
+      "max_score": 10.0,
+      "evidence": [
+        "Candidate Type: Experienced Professional",
+        "Required Sections: Contact Information, Education, Skills, Work Experience",
+        "'Contact Information' section: Detected",
+        "'Education' section: Detected",
+        "'Work Experience' section: Detected",
+        "'Skills' section: Detected",
+        "'Projects' section: Detected",
+        "'Certifications' section: Detected",
+        "'Achievements' section: Not detected"
+      ]
+    },
+    "readability_consistency": {
+      "score": 3.0,
+      "max_score": 5.0,
+      "evidence": [
+        "Penalty: Missing dates in experience duration (-1.0)",
+        "Penalty: Less than 25% of bullet points start with action verbs (-1.0)"
+      ]
+    }
+  },
+  "ats_scores": {
+    "ats_compatibility": 14.0,
+    "resume_structure": 13.0,
+    "keyword_relevance": 20.0,
+    "content_quality": 12.0,
+    "skills_representation": 7.0,
+    "quantified_impact": 5.0,
+    "completeness": 9.5,
+    "readability_consistency": 3.0,
+    "overall_score": 83.5
+  },
+  "ats_compatibility": {
+    "checks": [
+      {
+        "name": "Contact Information",
+        "status": "pass",
+        "message": "Both email and phone contact details were successfully detected."
+      },
+      {
+        "name": "Critical Resume Sections",
+        "status": "pass",
+        "message": "All critical sections (Education, Experience, Skills) were successfully detected."
+      },
+      {
+        "name": "Resume Column Layout",
+        "status": "pass",
+        "message": "Standard single-column text layout detected."
+      },
+      {
+        "name": "Text Extraction Quality",
+        "status": "pass",
+        "message": "Resume text is digitally extractable and clean."
+      },
+      {
+        "name": "Employment Dates",
+        "status": "warn",
+        "message": "One or more work experience entries are missing duration dates."
+      },
+      {
+        "name": "Text Paragraph Lengths",
+        "status": "pass",
+        "message": "All experience bullet points are concise and readable."
+      },
+      {
+        "name": "Measurable Outcomes",
+        "status": "pass",
+        "message": "Good representation of metrics and quantitative outcomes: 4/8 experience/project bullets contain strong metrics."
+      }
+    ]
+  },
+  "completeness": {
+    "sections": {
+      "Contact Information": true,
+      "Education": true,
+      "Work Experience": true,
+      "Skills": true,
+      "Projects": true,
+      "Certifications": true,
+      "Achievements": false
+    },
+    "completeness_percent": 95.0
+  },
+  "achievement_report": {
+    "count": 4,
+    "detected_achievements": [
+      "Software Engineer II at TechCorp Solutions: Reduced page load time by 35% through API query optimizations.",
+      "Software Engineer II at TechCorp Solutions: Spearheaded migration of legacy services, resulting in a 20% cloud hosting cost reduction.",
+      "Innovate AI - Software Engineering Intern - 2021: Built document scanning prototypes achieving 92% classification accuracy.",
+      "Innovate AI - Software Engineering Intern - 2021: Automated reporting pipelines, saving the operations team 5 hours per week."
+    ],
+    "suggestions": [
+      "In your bullet for 'Software Engineer II at TechCorp Solutions', quantify the outcome of: 'Developed and maintained microservices using Python and Flask.' (e.g., 'reducing latency by X%' or 'saving Y hours per week').",
+      "In your bullet for 'Project', quantify the outcome of: 'Designed and built a complete single-page interactive report and scoring tool.' (e.g., 'reducing latency by X%' or 'saving Y hours per week')."
+    ]
+  },
+  "keyword_intelligence": {
+    "domain_strength": {
+      "Software Engineering": "High",
+      "Web Development": "Medium",
+      "Cloud & DevOps": "Low",
+      "Data & AI": "Medium"
+    },
+    "job_match": {
+      "matched_keywords": [
+        "Python",
+        "Flask",
+        "REST APIs",
+        "Git"
+      ],
+      "missing_keywords": [],
+      "matched_required_skills": [
+        "Python",
+        "Flask",
+        "REST APIs",
+        "Git"
+      ],
+      "missing_required_skills": [],
+      "matched_preferred_skills": [],
+      "missing_preferred_skills": [],
+      "jd_match_score": 100.0
+    },
+    "is_jd_provided": true,
+    "label": "Job Match Score"
+  },
+  "impact_analysis": {
+    "total_relevant_bullets": 8,
+    "strong_quantified_bullets": 4,
+    "partial_quantified_bullets": 0,
+    "non_quantified_bullets": 4,
+    "quantified_ratio": 50.0,
+    "detected_metrics": [
+      "20%",
+      "35%",
+      "5 hours per week",
+      "92%"
+    ],
+    "technical_metrics": [],
+    "achievement_metrics": [
+      "20%",
+      "35%",
+      "5 hours per week",
+      "92%"
+    ]
+  },
+  "ai_summary": "A Computer Science undergraduate building full-stack computer vision systems using OpenCV, MediaPipe and PyTorch, while exploring Agentic AI, RAG and LLM integration using Google Gemini API in multi-agent architectures. Target areas: AI/ML Engineering, Computer Vision Research, SDE internships.",
+  "improvement_suggestions": [
+    "Add the actual measured improvement in inference speed or accuracy if you have benchmark results for Aparsoft Private Limited.",
+    "If you have a measured FPS, detection accuracy, false-positive rate, or response latency, add it to demonstrate HomeGuard AI or DriveSafe AI performance.",
+    "Specify where you designed or integrated REST APIs in your Vision AI Intern role.",
+    "Organize your skills section into categorized groups (e.g. Languages, Frameworks, Tools) to make it easy for recruiters to index.",
+    "Quantify the results of your experiences and projects where you have genuine metrics. Avoid fabricating fake figures; specify actual percentage improvements, time saved, or scale outcomes."
+  ],
+  "strengths": [
+    "Exposure to PyTorch and TensorFlow."
+  ],
+  "weaknesses": [
+    "Most experience/project bullets lack measurable outcomes.",
+    "Current experience section has no explicit quantified performance results.",
+    "Projects describe functionality well but provide limited benchmark evidence."
+  ]
+}

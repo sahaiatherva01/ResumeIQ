@@ -1,0 +1,308 @@
+{
+  "personal_info": {
+    "name": "Alex Mercer",
+    "email": "alex.mercer@example.com",
+    "phone": "+1 (555) 019-2834",
+    "location": "San Francisco, CA",
+    "linkedin": "https://linkedin.com/in/alex-mercer",
+    "github": "https://github.com/alex-mercer",
+    "portfolio": "https://alexmercer.dev"
+  },
+  "education": [
+    {
+      "institution": "University of California, Berkeley",
+      "degree": "B.S.",
+      "field": "Computer Science",
+      "gpa": "3.82/4.0",
+      "start_year": "2018",
+      "graduation_year": "2022"
+    }
+  ],
+  "experience": [
+    {
+      "company": "TechCorp Solutions",
+      "role": "Software Engineer II",
+      "duration": "June 2022 - Present",
+      "responsibilities": [
+        "Developed and maintained scalable microservices using Python and Flask.",
+        "Improved system response latency and optimized database queries.",
+        "Collaborated with frontend teams to implement premium designs and responsive user experiences.",
+        "Mentored junior developers and participated in architectural review meetings."
+      ],
+      "technologies": [
+        "Python",
+        "Flask",
+        "PostgreSQL",
+        "Docker",
+        "AWS"
+      ],
+      "achievements": [
+        "Reduced page load time by 35% through API query optimizations.",
+        "Spearheaded migration of legacy services, resulting in a 20% cloud hosting cost reduction."
+      ]
+    },
+    {
+      "company": "Innovate AI",
+      "role": "Software Engineering Intern",
+      "duration": "June 2021 - September 2021",
+      "responsibilities": [
+        "Built machine learning prototypes for document scanning and text extraction.",
+        "Implemented responsive dashboards for monitoring backend task pipelines.",
+        "Wrote unit tests and automated integration testing scripts."
+      ],
+      "technologies": [
+        "Python",
+        "PyTorch",
+        "FastAPI",
+        "React",
+        "Git"
+      ],
+      "achievements": [
+        "Successfully prototype achieved 92% classification accuracy.",
+        "Automated daily reporting pipelines, saving the operations team 5 hours per week."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "ResumeLens AI",
+      "description": "An intelligent resume analyzer utilizing Gemini LLM and programmatic parsing rules to grade and optimize resumes.",
+      "technologies": [
+        "Python",
+        "Flask",
+        "Gemini API",
+        "PyMuPDF",
+        "HTML5/CSS3"
+      ],
+      "domain": "AI / Web Dev",
+      "achievements": "Designed and built a complete single-page interactive report and scoring tool.",
+      "links": [
+        "https://github.com/alex-mercer/ResumeLens-AI"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "name": "AWS Certified Developer - Associate",
+      "issuer": "Amazon Web Services",
+      "date": "2023"
+    }
+  ],
+  "achievements": [
+    {
+      "description": "Dean's Honors List (UC Berkeley) - 4 semesters",
+      "category": "award"
+    },
+    {
+      "description": "First Place Winner - CalHacks Hackathon 2021",
+      "category": "award"
+    }
+  ],
+  "skill_profile": {
+    "raw_skills": [
+      "Python",
+      "Flask",
+      "Docker",
+      "AWS",
+      "PostgreSQL",
+      "Git",
+      "FastAPI",
+      "React",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "PyTorch",
+      "REST APIs"
+    ],
+    "categorized_skills": {
+      "Languages": [
+        "Python",
+        "JavaScript",
+        "SQL",
+        "HTML",
+        "CSS"
+      ],
+      "Frameworks & Tools": [
+        "Flask",
+        "FastAPI",
+        "React",
+        "Docker",
+        "Git",
+        "PyTorch"
+      ],
+      "Cloud & DB": [
+        "AWS",
+        "PostgreSQL"
+      ]
+    },
+    "normalized_skills": [
+      "Python",
+      "Flask",
+      "Docker",
+      "AWS",
+      "PostgreSQL",
+      "Git",
+      "FastAPI",
+      "React",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "PyTorch",
+      "REST APIs"
+    ]
+  },
+  "ats_scores": {
+    "ats_compatibility": 15.0,
+    "resume_structure": 15.0,
+    "keyword_relevance": 15.7,
+    "content_quality": 12.0,
+    "skills_representation": 9.0,
+    "quantified_impact": 3.3,
+    "completeness": 10.0,
+    "readability_consistency": 5.0,
+    "overall_score": 85.0
+  },
+  "ats_compatibility": {
+    "checks": [
+      {
+        "name": "Contact Information",
+        "status": "pass",
+        "message": "Both email and phone contact details were successfully detected."
+      },
+      {
+        "name": "Critical Resume Sections",
+        "status": "pass",
+        "message": "All critical sections (Education, Experience, Skills) were successfully detected."
+      },
+      {
+        "name": "Resume Column Layout",
+        "status": "pass",
+        "message": "Standard single-column text layout detected."
+      },
+      {
+        "name": "Text Extraction Quality",
+        "status": "pass",
+        "message": "Resume text is digitally extractable and clean."
+      },
+      {
+        "name": "Employment Dates",
+        "status": "pass",
+        "message": "All work experience items contain active dates."
+      },
+      {
+        "name": "Text Paragraph Lengths",
+        "status": "pass",
+        "message": "All experience bullet points are concise and readable."
+      },
+      {
+        "name": "Measurable Outcomes",
+        "status": "warn",
+        "message": "Only 4/12 experience/project bullets contain strong measurable metrics. Quantifying results is highly recommended."
+      }
+    ],
+    "ats_readiness": 93.0
+  },
+  "completeness": {
+    "sections": {
+      "Contact Information": true,
+      "Education": true,
+      "Work Experience": true,
+      "Skills": true,
+      "Projects": true,
+      "Certifications": true,
+      "Achievements": true
+    },
+    "completeness_percent": 100.0
+  },
+  "achievement_report": {
+    "count": 4,
+    "detected_achievements": [
+      "Software Engineer II at TechCorp Solutions: Reduced page load time by 35% through API query optimizations.",
+      "Software Engineer II at TechCorp Solutions: Spearheaded migration of legacy services, resulting in a 20% cloud hosting cost reduction.",
+      "Software Engineering Intern at Innovate AI: Successfully prototype achieved 92% classification accuracy.",
+      "Software Engineering Intern at Innovate AI: Automated daily reporting pipelines, saving the operations team 5 hours per week."
+    ],
+    "suggestions": [
+      "In your bullet for 'Software Engineer II at TechCorp Solutions', quantify the outcome of: 'Developed and maintained scalable microservices using Python and Flask.' (e.g., 'reducing latency by X%' or 'saving Y hours per week').",
+      "In your bullet for 'Software Engineer II at TechCorp Solutions', quantify the outcome of: 'Improved system response latency and optimized database queries.' (e.g., 'reducing latency by X%' or 'saving Y hours per week').",
+      "In your bullet for 'Software Engineer II at TechCorp Solutions', quantify the outcome of: 'Mentored junior developers and participated in architectural review meetings.' (e.g., 'reducing latency by X%' or 'saving Y hours per week').",
+      "In your bullet for 'Software Engineering Intern at Innovate AI', quantify the outcome of: 'Built machine learning prototypes for document scanning and text extraction.' (e.g., 'reducing latency by X%' or 'saving Y hours per week').",
+      "In your bullet for 'Software Engineering Intern at Innovate AI', quantify the outcome of: 'Implemented responsive dashboards for monitoring backend task pipelines.' (e.g., 'reducing latency by X%' or 'saving Y hours per week').",
+      "In your bullet for 'Project 'ResumeLens AI'', quantify the outcome of: 'Designed and built a complete single-page interactive report and scoring tool.' (e.g., 'reducing latency by X%' or 'saving Y hours per week')."
+    ]
+  },
+  "keyword_intelligence": {
+    "domain_strength": {
+      "Software Engineering": "High",
+      "Web Development": "High",
+      "Cloud & DevOps": "Medium",
+      "Data & AI": "Medium"
+    },
+    "job_match": {
+      "matched_keywords": [
+        "Python",
+        "Flask",
+        "REST APIs",
+        "PostgreSQL",
+        "AWS",
+        "Git"
+      ],
+      "missing_keywords": [
+        "Docker",
+        "Kubernetes",
+        "Redis",
+        "CI/CD"
+      ],
+      "matched_required_skills": [
+        "Python programming",
+        "Web frameworks (Flask)",
+        "SQL database experience"
+      ],
+      "missing_required_skills": [
+        "Containerization (Docker)",
+        "Cloud deployment infrastructure"
+      ],
+      "matched_preferred_skills": [
+        "RESTful API design",
+        "Mentoring junior developers"
+      ],
+      "missing_preferred_skills": [
+        "NoSQL databases (Redis/MongoDB)",
+        "Kubernetes orchestration"
+      ],
+      "jd_match_score": 78.5
+    },
+    "is_jd_provided": true,
+    "label": "Job Match Score"
+  },
+  "impact_analysis": {
+    "total_relevant_bullets": 12,
+    "strong_quantified_bullets": 4,
+    "partial_quantified_bullets": 0,
+    "non_quantified_bullets": 8,
+    "quantified_ratio": 33.3,
+    "detected_metrics": [
+      "20%",
+      "35%",
+      "5 hours",
+      "92%"
+    ]
+  },
+  "ai_summary": "Alex Mercer is a Software Engineer with over 2 years of professional experience specializing in Python backend architectures, REST APIs, and AWS cloud solutions. They possess a solid foundation in Computer Science from UC Berkeley and have a proven track record of optimizing system performance and engineering AI-driven prototypes.",
+  "improvement_suggestions": [
+    "Quantify more achievements in your internship section. For example, specify what quantity of reporting pipelines were automated.",
+    "Add certifications if you possess any additional cloud or security credentials.",
+    "Consider renaming 'Software Engineering Intern' achievements to be more action-oriented.",
+    "Quantify the results of your experiences and projects where you have genuine metrics (e.g. percentage improvements, time saved, or system load statistics)."
+  ],
+  "strengths": [
+    "Strong backend tech stack (Python, Flask, databases, cloud).",
+    "Clear technical writing and solid project experience.",
+    "Demonstrated history of optimizing system performance (reduced load times, saved costs)."
+  ],
+  "weaknesses": [
+    "Limited visibility into frontend framework expertise (React mentioned but minimal role detail).",
+    "Only one professional certification listed.",
+    "Internship achievements are a bit passive in wording."
+  ]
+}

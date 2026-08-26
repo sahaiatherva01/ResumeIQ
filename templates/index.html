@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResumeLens AI — ATS+ Resume Intelligence Engine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <!-- ============ TOP NAVBAR ============ -->
+    <header class="navbar">
+        <div class="navbar-inner">
+            <div class="navbar-brand">
+                <span class="brand-mark" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="1.8"/>
+                        <path d="M20 20L15.65 15.65" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                    </svg>
+                </span>
+                <span class="brand-text">ResumeLens <span class="brand-accent">AI</span></span>
+            </div>
+
+            <nav class="navbar-links" id="report-nav" aria-label="Report sections">
+                <a href="#section-overview" class="nav-link active" data-nav="section-overview">Overview</a>
+                <a href="#section-score" class="nav-link" data-nav="section-score">Score</a>
+                <a href="#section-strengths" class="nav-link" data-nav="section-strengths">Strengths</a>
+                <a href="#section-weaknesses" class="nav-link" data-nav="section-weaknesses">Weaknesses</a>
+                <a href="#section-improvements" class="nav-link" data-nav="section-improvements">Improvements</a>
+                <a href="#section-simulation" class="nav-link" data-nav="section-simulation">ATS Simulation</a>
+            </nav>
+
+            <div class="navbar-actions">
+                <button class="btn btn-ghost btn-sm hidden" id="new-upload-btn" type="button">Upload New Resume</button>
+                <button class="btn btn-primary btn-sm hidden" id="download-pdf-btn" type="button">Download Report</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="app-shell">
+        <main class="app-main">
+
+            <!-- ============ UPLOAD SCREEN ============ -->
+            <section id="upload-section" class="view-panel">
+                <div class="upload-card">
+                    <div class="upload-card-head">
+                        <h1>Analyze your resume</h1>
+                        <p class="upload-subtitle">Get an ATS+ readiness score, structural diagnostics, and concrete improvements in seconds.</p>
+                    </div>
+
+                    <div class="dropzone" id="drop-zone">
+                        <div class="dropzone-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 15.5V4M12 4L7.5 8.5M12 4L16.5 8.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.5 15.5V17.5C4.5 18.6046 5.39543 19.5 6.5 19.5H17.5C18.6046 19.5 19.5 18.6046 19.5 17.5V15.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <p class="dropzone-title">Drag & drop your resume here</p>
+                        <p class="dropzone-sub">or</p>
+                        <input type="file" id="file-input" accept=".pdf,.docx,.doc" class="hidden-input">
+                        <button class="btn btn-primary" id="browse-btn" type="button">Choose File</button>
+                        <p class="dropzone-formats">PDF &nbsp;•&nbsp; DOCX &nbsp;&middot;&nbsp; Max 16&nbsp;MB</p>
+                    </div>
+
+                    <div class="file-chip hidden" id="file-chip">
+                        <span class="file-chip-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 3.5H13.5L18 8V19.5C18 20.0523 17.5523 20.5 17 20.5H7C6.44772 20.5 6 20.0523 6 19.5V4.5C6 3.94772 6.44772 3.5 7 3.5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                                <path d="M13.5 3.5V8H18" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                        <div class="file-chip-meta">
+                            <span class="file-chip-name" id="file-chip-name">resume.pdf</span>
+                            <span class="file-chip-size" id="file-chip-size">120 KB</span>
+                        </div>
+                        <button class="file-chip-remove" id="file-chip-remove" type="button" aria-label="Remove selected file">✕</button>
+                    </div>
+
+                    <button class="btn btn-primary btn-full hidden" id="analyze-btn" type="button">Analyze Resume</button>
+
+                    <p class="upload-error hidden" id="upload-error" role="alert"></p>
+                </div>
+            </section>
+
+            <!-- ============ LOADING SCREEN ============ -->
+            <section id="loading-section" class="view-panel hidden">
+                <div class="loading-card">
+                    <div class="loading-visual" aria-hidden="true">
+                        <svg class="loading-ring" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="42" class="loading-ring-track"></circle>
+                            <circle cx="50" cy="50" r="42" class="loading-ring-fill"></circle>
+                        </svg>
+                        <span class="loading-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="1.8"/>
+                                <path d="M20 20L15.65 15.65" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                            </svg>
+                        </span>
+                    </div>
+
+                    <h2 id="loading-status">Analyzing your resume</h2>
+                    <p class="loading-subtext" id="loading-subtext">This usually takes a few seconds.</p>
+
+                    <ol class="loading-steps" aria-label="Analysis progress" id="loading-steps">
+                        <li class="loading-step active" id="step-upload" data-state="done">
+                            <span class="step-marker" aria-hidden="true"></span>
+                            <span class="step-label">Resume uploaded</span>
+                        </li>
+                        <li class="loading-step" id="step-parse" data-state="active">
+                            <span class="step-marker" aria-hidden="true"></span>
+                            <span class="step-label">Extracting content</span>
+                        </li>
+                        <li class="loading-step" id="step-extract" data-state="pending">
+                            <span class="step-marker" aria-hidden="true"></span>
+                            <span class="step-label">Analyzing structure</span>
+                        </li>
+                        <li class="loading-step" id="step-analyze" data-state="pending">
+                            <span class="step-marker" aria-hidden="true"></span>
+                            <span class="step-label">Evaluating ATS readiness</span>
+                        </li>
+                        <li class="loading-step" id="step-report" data-state="pending">
+                            <span class="step-marker" aria-hidden="true"></span>
+                            <span class="step-label">Preparing report</span>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+
+            <!-- ============ ERROR SCREEN ============ -->
+            <section id="error-section" class="view-panel hidden">
+                <div class="error-card" role="alert">
+                    <div class="error-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 8.5V13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                            <path d="M12 16.2H12.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/>
+                        </svg>
+                    </div>
+                    <h2 id="error-title">Something went wrong</h2>
+                    <p id="error-message">We couldn't process that file. Please try again.</p>
+                    <button class="btn btn-primary" id="error-retry-btn" type="button">Try Again</button>
+                </div>
+            </section>
+
+            <!-- ============ RESULTS ============ -->
+            <div id="results-container" class="hidden">
+
+                <!-- ---- REPORT HEADER ---- -->
+                <section class="report-header" id="section-overview">
+                    <div class="report-header-main">
+                        <div class="report-candidate">
+                            <h1 id="candidate-name">Candidate</h1>
+                            <p class="report-contact" id="candidate-contact">—</p>
+                        </div>
+                        <dl class="report-meta">
+                            <div class="report-meta-item">
+                                <dt>File</dt>
+                                <dd id="meta-filename">—</dd>
+                            </div>
+                            <div class="report-meta-item">
+                                <dt>Analyzed</dt>
+                                <dd id="meta-date">—</dd>
+                            </div>
+                        </dl>
+                    </div>
+                    <p class="report-interpretation" id="report-interpretation">—</p>
+                </section>
+
+                <!-- ---- SCORE CENTERPIECE ---- -->
+                <section class="score-section" id="section-score">
+                    <div class="score-panel">
+                        <div class="score-radial-container">
+                            <svg class="score-svg" viewBox="0 0 100 100">
+                                <circle class="score-track" cx="50" cy="50" r="42"></circle>
+                                <circle class="score-fill" id="score-circle-fill" cx="50" cy="50" r="42"></circle>
+                            </svg>
+                            <div class="score-text">
+                                <span class="score-num" id="score-display">0</span>
+                                <span class="score-max">/100</span>
+                                <span class="score-label" id="score-rating">—</span>
+                            </div>
+                        </div>
+                        <p class="score-trust-note" id="scoring-disclaimer">
+                            Score generated from your uploaded resume using ResumeLens AI's ATS+ scoring framework — an analytical readiness estimate, not a replica of any proprietary ATS.
+                        </p>
+                    </div>
+
+                    <div class="score-distribution-panel">
+                        <div class="score-distribution-head">
+                            <h3>Score Distribution</h3>
+                            <p>How the overall ATS+ score is calculated</p>
+                        </div>
+                        <div class="category-list" id="category-score-list"></div>
+                    </div>
+                </section>
+
+                <!-- ---- OVERVIEW SUMMARY CARDS ---- -->
+                <section class="overview-grid">
+                    <div class="overview-card">
+                        <h4 class="overview-card-title text-success">Strengths</h4>
+                        <ul class="overview-mini-list" id="overview-strengths"></ul>
+                    </div>
+                    <div class="overview-card">
+                        <h4 class="overview-card-title text-danger">Key Issues</h4>
+                        <ul class="overview-mini-list" id="overview-issues"></ul>
+                    </div>
+                    <div class="overview-card overview-card-priority">
+                        <h4 class="overview-card-title">Priority</h4>
+                        <p class="overview-priority-text" id="overview-priority">—</p>
+                    </div>
+                </section>
+
+                <!-- ---- STRENGTHS ---- -->
+                <section class="content-section" id="section-strengths">
+                    <div class="section-heading">
+                        <h2>What's Working</h2>
+                    </div>
+                    <div class="finding-grid" id="strengths-list"></div>
+                </section>
+
+                <!-- ---- WEAKNESSES ---- -->
+                <section class="content-section" id="section-weaknesses">
+                    <div class="section-heading">
+                        <h2>What Needs Attention</h2>
+                        <div class="filter-group" id="weakness-filters">
+                            <button class="filter-chip active" data-weak-severity="all" type="button">All</button>
+                            <button class="filter-chip" data-weak-severity="high" type="button">High</button>
+                            <button class="filter-chip" data-weak-severity="medium" type="button">Medium</button>
+                            <button class="filter-chip" data-weak-severity="low" type="button">Low</button>
+                        </div>
+                    </div>
+                    <div class="weakness-list" id="detailed-weaknesses-list-container"></div>
+                </section>
+
+                <!-- ---- TOP IMPROVEMENTS ---- -->
+                <section class="content-section" id="section-improvements">
+                    <div class="section-heading">
+                        <h2>Top Improvements</h2>
+                    </div>
+                    <ol class="improvement-timeline" id="top-improvements-list"></ol>
+                </section>
+
+                <!-- ---- ATS SIMULATION ---- -->
+                <section class="content-section" id="section-simulation">
+                    <div class="section-heading">
+                        <h2>ATS Simulation</h2>
+                    </div>
+                    <div class="sim-status-row">
+                        <span>Overall parsing status</span>
+                        <span class="status-badge" id="sim-overall-badge">—</span>
+                    </div>
+                    <div class="table-card">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Check</th>
+                                    <th>Status</th>
+                                    <th>Detail</th>
+                                </tr>
+                            </thead>
+                            <tbody id="simulation-checks-container"></tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- ---- ATS COMPATIBILITY ---- -->
+                <section class="content-section">
+                    <div class="section-heading">
+                        <h2>ATS Compatibility Checks</h2>
+                        <div class="filter-group" id="compat-filters">
+                            <button class="filter-chip active" data-filter="all" type="button">All</button>
+                            <button class="filter-chip" data-filter="fail" type="button">Fail</button>
+                            <button class="filter-chip" data-filter="warn" type="button">Warning</button>
+                            <button class="filter-chip" data-filter="pass" type="button">Pass</button>
+                        </div>
+                    </div>
+                    <div class="table-card">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Check</th>
+                                    <th>Status</th>
+                                    <th>Detail</th>
+                                </tr>
+                            </thead>
+                            <tbody id="compatibility-checks-table"></tbody>
+                        </table>
+                    </div>
+                    <p class="table-footnote">Compatibility score: <strong id="compat-readiness">0/15</strong></p>
+                </section>
+
+                <!-- ---- COMPLETENESS + QUALITY ---- -->
+                <div class="two-col-grid">
+                    <section class="content-section">
+                        <div class="section-heading">
+                            <h2>Resume Completeness</h2>
+                        </div>
+                        <div class="completeness-bar-container">
+                            <div class="completeness-bar-fill" id="completeness-bar" style="width: 0%"></div>
+                        </div>
+                        <p class="completeness-caption" id="completeness-text">0% complete</p>
+                        <div class="section-grid" id="completeness-sections-grid"></div>
+                    </section>
+
+                    <section class="content-section">
+                        <div class="section-heading">
+                            <h2>Quality Dashboard</h2>
+                        </div>
+                        <div class="category-list" id="quality-indicators-container"></div>
+                    </section>
+                </div>
+
+                <!-- ---- SKILLS + KEYWORDS ---- -->
+                <div class="two-col-grid">
+                    <section class="content-section">
+                        <div class="section-heading">
+                            <h2>Skill Analysis</h2>
+                            <div class="filter-group" id="skill-tab-filters">
+                                <button class="filter-chip active" data-skill-view="categorized" type="button">Categorized</button>
+                                <button class="filter-chip" data-skill-view="normalized" type="button">Normalized</button>
+                            </div>
+                        </div>
+                        <div id="skills-display-container"></div>
+                    </section>
+
+                    <section class="content-section">
+                        <div class="section-heading">
+                            <h2>Keyword Strength</h2>
+                        </div>
+                        <p class="section-subtext">Relative strength of domain terminology found in the resume.</p>
+                        <div class="keyword-list" id="keyword-strength-list"></div>
+                    </section>
+                </div>
+
+                <!-- ---- ACHIEVEMENTS ---- -->
+                <section class="content-section">
+                    <div class="section-heading">
+                        <h2>Quantified Impact</h2>
+                    </div>
+                    <div class="metric-banner">
+                        <span class="metric-number" id="achievements-count">0</span>
+                        <span class="metric-label">bullets with measurable impact</span>
+                    </div>
+                    <div class="two-col-grid">
+                        <div>
+                            <h4 class="subsection-label text-success">Detected Achievements</h4>
+                            <ul class="overview-mini-list" id="detected-achievements-list"></ul>
+                        </div>
+                        <div>
+                            <h4 class="subsection-label">Suggestions</h4>
+                            <ul class="overview-mini-list" id="action-suggestions-list"></ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ---- DETAILED ANALYSIS (category explanations) ---- -->
+                <section class="content-section">
+                    <button class="accordion-header" id="explanation-accordion-btn" type="button">
+                        <span>Detailed Category Analysis</span>
+                        <span class="accordion-arrow" aria-hidden="true">▾</span>
+                    </button>
+                    <div class="accordion-content" id="explanation-accordion-content">
+                        <div class="explanation-grid" id="category-explanations-container"></div>
+                    </div>
+                </section>
+
+                <!-- ---- EXTRACTED RESUME PROFILE ---- -->
+                <section class="content-section">
+                    <div class="section-heading">
+                        <h2>Extracted Resume Profile</h2>
+                    </div>
+                    <p class="section-subtext">Verify that ResumeLens correctly understood your resume.</p>
+                    <div class="profile-accordion-list" id="extracted-profile-container"></div>
+                </section>
+
+                <!-- ---- RAW JSON ---- -->
+                <section class="content-section">
+                    <button class="accordion-header" id="json-accordion-btn" type="button">
+                        <span>View Raw CandidateProfile JSON</span>
+                        <span class="accordion-arrow" aria-hidden="true">▾</span>
+                    </button>
+                    <div class="accordion-content" id="json-accordion-content">
+                        <div class="json-actions">
+                            <button class="btn btn-ghost btn-sm" id="copy-json-btn" type="button">Copy JSON</button>
+                        </div>
+                        <pre class="json-viewer"><code id="raw-json-block">...</code></pre>
+                    </div>
+                </section>
+
+                <!-- ---- FOOTER ACTIONS ---- -->
+                <div class="footer-actions">
+                    <button class="btn btn-secondary" id="reset-btn" type="button">Analyze Another Resume</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
