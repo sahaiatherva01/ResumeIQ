@@ -6,7 +6,7 @@ ResumeIQ is an AI-powered resume analysis platform that helps candidates underst
 
 It extracts the actual information present in a resume, structures it into a candidate profile, evaluates resume quality and ATS compatibility, calculates an overall analytical ATS score, identifies strengths and weaknesses, and provides actionable improvement insights.
 
-> **Don't just tell candidates that their resume needs improvement. Show them why.**
+ **Don't just tell candidates that their resume needs improvement. Show them why.**
 
 ---
 
