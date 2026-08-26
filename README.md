@@ -61,7 +61,7 @@ It identifies:
 - Resume quality observations
 - Actionable improvement recommendations
 
-### 🔍 ATS Compatibility Analysis
+###  ATS Compatibility Analysis
 
 The platform performs multiple ATS-oriented checks to identify potential parsing and resume-quality issues.
 
