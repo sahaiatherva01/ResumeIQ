@@ -1,0 +1,94 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+.conda/
+
+# =========================
+# Environment / Secrets
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# Flask
+# =========================
+instance/
+.webassets-cache/
+
+# =========================
+# Project-generated data
+# =========================
+data/
+*.json
+!package.json
+!package-lock.json
+
+# Keep explicitly tracked/sample files if needed
+# Uncomment/adjust if your project stores important JSON in data/
+# !data/sample.json
+
+# =========================
+# Logs / Debug
+# =========================
+*.log
+logs/
+debug.log
+
+# =========================
+# IDE / Editor
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# =========================
+# Testing / Coverage
+# =========================
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# =========================
+# Build / Distribution
+# =========================
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# =========================
+# OS / Temporary files
+# =========================
+.DS_Store
+Thumbs.db
+*.tmp
+*.temp
+
+# =========================
+# Generated reports / uploads
+# =========================
+uploads/
+outputs/
+reports/
+
+# =========================
+# Local debug files
+# =========================
+debug_*.json
+analysis_*.json
